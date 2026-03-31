@@ -12,9 +12,8 @@ class Figure(ABC):
     def perimeter(self):
         pass
 
-def add_area(self, figure):
-    if not isinstance(figure, Figure):
-        raise ValueError('argument figure must be instance of Figure class')
-    return self.area + figure.area
-
+    def add_area(self, figure):
+        if not isinstance(figure, Figure):
+            raise ValueError('argument figure must be instance of Figure class')
+        return self.area + figure.area
 

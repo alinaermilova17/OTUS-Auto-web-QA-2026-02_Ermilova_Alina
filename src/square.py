@@ -1,5 +1,5 @@
-from src.figure import add_area, Figure
-from src.rectangle import rectangle
+from src.figure import Figure
+from src.rectangle import Rectangle
 
 
 class Square(Figure):
@@ -19,14 +19,9 @@ class Square(Figure):
     def perimeter(self):
         return  self.side_a*4
 
-    def print_results(self):
-        print(f'square side_a = {self.side_a}')
-        print(f'square area = {self.area}')
-        print(f'square perimeter = {self.perimeter}')
-        print(f'Сумма площадей = {add_area(square, figure=rectangle)}')
-        print()
 
 
 square = Square(10)
-square.print_results()
+rectangle = Rectangle(5,9)
+square.add_area(rectangle)
 

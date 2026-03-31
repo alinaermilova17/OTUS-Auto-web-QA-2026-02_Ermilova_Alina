@@ -1,8 +1,7 @@
 import math
 
-from src.circle import circle
-from src.figure import Figure, add_area
-
+from src import Figure
+from src.circle import Circle
 
 
 class Triangle(Figure):
@@ -26,16 +25,11 @@ class Triangle(Figure):
     def perimeter(self):
         return (self.side_a + self.side_b+self.side_c)
 
-    def print_results(self):
-        print(f'triangle side_a = {self.side_a}, side_b = {self.side_b}, side_c = {self.side_c}')
-        print(f'triangle area = {self.area}')
-        print(f'triangle perimeter = {self.perimeter}')
-        print(f'Сумма площадей = {add_area(triangle, figure=circle)}')
-        print()
 
 triangle = Triangle(13, 14, 15)
-print_results = triangle.print_results
-triangle.print_results()
+circle = Circle(7)
+triangle.add_area(circle)
+
 
 
 

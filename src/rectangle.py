@@ -1,5 +1,5 @@
-from src.figure import Figure, add_area
-from src.triangle import triangle
+from src.figure import Figure
+from src.triangle import Triangle
 
 
 class Rectangle(Figure):
@@ -19,15 +19,10 @@ class Rectangle(Figure):
     def perimeter(self):
         return (self.side_a + self.side_b)*2
 
-    def print_results(self):
-        print(f'rectangle side_a={self.side_a}, rectangle side_b={self.side_b}')
-        print(f'rectangle area={self.area}')
-        print(f'rectangle perimeter={self.perimeter}')
-        print(f'Сумма площадей = {add_area(rectangle, figure=triangle)}')
-        print()
 
 rectangle = Rectangle(5, 8)
-rectangle.print_results()
+triangle = Triangle(5, 8,10)
+rectangle.add_area(triangle)
 
 
 

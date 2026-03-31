@@ -1,6 +1,6 @@
 import math
 from src.figure import Figure
-
+from src.triangle import Triangle
 
 
 class Circle(Figure):
@@ -18,13 +18,8 @@ class Circle(Figure):
     def perimeter(self) -> float:
         return 2 * math.pi * self.radius
 
-    def print_results(self):
-        print(f'radius: {self.radius}')
-        print(f'circle area: {self.area}')
-        print(f'circle perimeter: {self.perimeter}')
-        print()
-
 
 circle = Circle(7)
-circle.print_results()
+triangle = Triangle(3,8,10)
+circle.add_area(triangle)
 
