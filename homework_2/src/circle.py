@@ -1,6 +1,5 @@
 import math
-from src.figure import Figure
-from src.triangle import Triangle
+from homework_2.src.figure import Figure
 
 
 class Circle(Figure):
@@ -17,9 +16,3 @@ class Circle(Figure):
     @property
     def perimeter(self) -> float:
         return 2 * math.pi * self.radius
-
-
-circle = Circle(7)
-triangle = Triangle(3,8,10)
-circle.add_area(triangle)
-

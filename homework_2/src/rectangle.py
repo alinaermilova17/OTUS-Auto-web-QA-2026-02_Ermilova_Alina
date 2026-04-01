@@ -1,6 +1,4 @@
-from src.figure import Figure
-from src.triangle import Triangle
-
+from homework_2.src.figure import Figure
 
 class Rectangle(Figure):
     def __init__(self, side_a:int, side_b: int):
@@ -18,14 +16,3 @@ class Rectangle(Figure):
     @property
     def perimeter(self):
         return (self.side_a + self.side_b)*2
-
-
-rectangle = Rectangle(5, 8)
-triangle = Triangle(5, 8,10)
-rectangle.add_area(triangle)
-
-
-
-
-
-

@@ -1,5 +1,4 @@
-from src.figure import Figure
-from src.rectangle import Rectangle
+from homework_2.src.figure import Figure
 
 
 class Square(Figure):
@@ -9,7 +8,6 @@ class Square(Figure):
 
         self.side_a = side_a
 
-
     @property
     def area(self):
         return self.side_a **2
@@ -18,10 +16,3 @@ class Square(Figure):
     @property
     def perimeter(self):
         return  self.side_a*4
-
-
-
-square = Square(10)
-rectangle = Rectangle(5,9)
-square.add_area(rectangle)
-

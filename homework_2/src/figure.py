@@ -16,4 +16,3 @@ class Figure(ABC):
         if not isinstance(figure, Figure):
             raise ValueError('argument figure must be instance of Figure class')
         return self.area + figure.area
-
